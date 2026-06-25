@@ -623,21 +623,23 @@ python repro_scripts\run_pipeline.py
 
 \section{小组成员分工}
 
-下表为根据现有 PPT 与技术材料整理的分工版本，具体姓名与职责可按小组最终确认结果微调。
+小组分工按完整项目链路组织。每位成员都参与了赛题理解、数据核对、实验推进、结果分析和交付材料检查；下表只列出各自牵头方向与主要贡献，实际工作中多处实验、汇报和文档内容由多人交叉复核。
 
 \begin{table}[H]
   \centering
   \caption{小组成员分工}
-  \begin{tabularx}{\linewidth}{l l X}
+  \small
+  \renewcommand{\arraystretch}{1.22}
+  \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{1.45cm} >{\raggedright\arraybackslash}p{2.75cm} X}
     \toprule
-    成员 & 分工方向 & 具体工作 \\
+    成员 & 参与链路 & 具体工作 \\
     \midrule
-    张子路 & 主干模型与复现 & 负责 IMU + Big Five 主干模型复现，整理 ORIG 有序回归流程，核对最终复现代码包与提交结果。 \\
-    郭子逸 & 面部特征工程 & 负责 OpenFace gaze/AU 特征筛选，构造 auvel、e3only、fatigue、auspec 等面部动态特征。 \\
-    龚正硕 & 语音模态探索 & 负责 openSMILE、MFCC、wav2vec2、GRU + attention、ASR + \phq 语义证据等语音实验。 \\
-    丁一鸣 & 融合方案与汇报 & 负责多路融合、\ccc 校准、分类头规则整理，以及汇报 PPT 和最终文档统筹。 \\
-    蒋一鸣 & 实验对比与结果整理 & 负责阶段性提交记录、融合权重与阈值对比、消融结果整理和问题分析。 \\
-    谈亮 & 工程整理与交付 & 负责 clean 版本代码整理、依赖与运行说明检查、最终提交包结构核对和可复现性说明。 \\
+    张子路 & 数据核对、主干建模、复现交付 & 参与赛题规则与数据结构梳理，牵头 IMU + Big Five 主干和 ORIG 有序回归复现；共同参与融合权重、分类阈值和最终提交结果核对，并负责将主干模型、数据分布与复现流程写入交付材料。 \\
+    郭子逸 & 面部模态、特征筛选、融合验证 & 参与 OpenFace 维度含义整理和抑郁症先验分析，牵头 gaze/AU 特征筛选及 auvel、e3only、fatigue、auspec 四路面部 ranker 构造；共同参与面部特征与 ORIG 主干的互补性分析、提交验证和验收问题补充。 \\
+    龚正硕 & 语音探索、负面结论、课程关联 & 参与音频数据结构核对和语音实验设计，牵头 openSMILE、MFCC、wav2vec2、GRU + attention、ASR + \phq 语义证据与 e2speech 等语音线探索；共同整理语音未进最终融合的原因、课程相关性和错误分析。 \\
+    丁一鸣 & 融合收口、指标分析、汇报统筹 & 参与阶段性结果汇总和多路方案选择，牵头 \ccc 分布校准、AND 分类规则、权重与阈值收口；共同负责 PPT 叙事、最终文档结构、赛道定位和答辩补充问题的统一表述。 \\
+    蒋一鸣 & 消融对比、结果追踪、问题分析 & 参与多阶段提交记录和 leaderboard 反馈整理，牵头里程碑结果、消融对比、模型失败案例和本地验证/hidden test 差异分析；共同完善实验结果表、问题分析和整体流程时序图。 \\
+    谈亮 & 工程规范、复现检查、材料交付 & 参与 clean 代码包整理和运行环境核对，牵头 requirements、README、run pipeline、提交包结构与无数据/无权重合规检查；共同参与 PDF/PPT 最终校对、仓库整理和交付材料一致性验证。 \\
     \bottomrule
   \end{tabularx}
 \end{table}
