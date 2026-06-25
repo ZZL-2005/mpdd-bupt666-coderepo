@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Data and weights
+Train-MPDD-*/
+Test-MPDD-*/
+privacy-constrained-raw-*/
+data/
+datasets/
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.xdv
+*.synctex.gz
+build/
+preview/
+docs/final_assignment_latex/main.pdf
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
