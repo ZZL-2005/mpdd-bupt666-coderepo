@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "n_subjects": 88,
+    "n_features": 41,
+    "feature_names": [
+      "dim0_low_band_energy_ratio",
+      "dim0_mid_band_energy_ratio",
+      "dim0_high_band_energy_ratio",
+      "dim0_low_band_cv",
+      "dim0_mid_band_cv",
+      "dim0_autocorr_first_peak",
+      "dim0_dominant_period",
+      "dim0_peak_interval_mean",
+      "dim0_peak_interval_std",
+      "dim0_peak_interval_cv",
+      "dim1_low_band_energy_ratio",
+      "dim1_mid_band_energy_ratio",
+      "dim1_high_band_energy_ratio",
+      "dim1_low_band_cv",
+      "dim1_mid_band_cv",
+      "dim1_autocorr_first_peak",
+      "dim1_dominant_period",
+      "dim1_peak_interval_mean",
+      "dim1_peak_interval_std",
+      "dim1_peak_interval_cv",
+      "dim2_low_band_energy_ratio",
+      "dim2_mid_band_energy_ratio",
+      "dim2_high_band_energy_ratio",
+      "dim2_low_band_cv",
+      "dim2_mid_band_cv",
+      "dim2_autocorr_first_peak",
+      "dim2_dominant_period",
+      "dim2_peak_interval_mean",
+      "dim2_peak_interval_std",
+      "dim2_peak_interval_cv",
+      "corr_xy",
+      "corr_xz",
+      "corr_yz",
+      "accel_mag_mean",
+      "accel_mag_std",
+      "accel_mag_cv",
+      "Agreeableness",
+      "Conscientiousness",
+      "Extraversion",
+      "Neuroticism",
+      "Openness"
+    ],
+    "test_ids": [
+      1,
+      5,
+      7,
+      13,
+      15,
+      22,
+      28,
+      33,
+      34,
+      40,
+      42,
+      44,
+      47,
+      58,
+      74,
+      83,
+      85,
+      89,
+      90,
+      93,
+      105,
+      110
+    ],
+    "n_permutations": 1000,
+    "n_bootstraps": 500,
+    "n_noise_features": 10,
+    "random_seed": 42
+  },
+  "experiment7_imu_dimension_importance": {
+    "single_dimension_with_personality": {
+      "0": {
+        "score": 0.3804,
+        "binary_f1": 0.6452,
+        "ternary_f1": 0.3736,
+        "mae": 2.8409,
+        "n_features": 10
+      },
+      "1": {
+        "score": 0.3324,
+        "binary_f1": 0.5618,
+        "ternary_f1": 0.3274,
+        "mae": 2.8864,
+        "n_features": 10
+      },
+      "2": {
+        "score": 0.3359,
+        "binary_f1": 0.5714,
+        "ternary_f1": 0.3221,
+        "mae": 2.9318,
+        "n_features": 10
+      },
+      "3": {
+        "score": 0.3913,
+        "binary_f1": 0.6067,
+        "ternary_f1": 0.4193,
+        "mae": 2.6932,
+        "n_features": 10
+      },
+      "4": {
+        "score": 0.3374,
+        "binary_f1": 0.5773,
+        "ternary_f1": 0.3172,
+        "mae": 2.9205,
+        "n_features": 10
+      },
+      "5": {
+        "score": 0.3817,
+        "binary_f1": 0.6383,
+        "ternary_f1": 0.3618,
+        "mae": 2.7614,
+        "n_features": 10
+      },
+      "6": {
+        "score": 0.4257,
+        "binary_f1": 0.6813,
+        "ternary_f1": 0.4089,
+        "mae": 2.6705,
+        "n_features": 10
+      },
+      "7": {
+        "score": 0.2953,
+        "binary_f1": 0.5169,
+        "ternary_f1": 0.2952,
+        "mae": 3.0114,
+        "n_features": 10
+      },
+      "8": {
+        "score": 0.3411,
+        "binary_f1": 0.5934,
+        "ternary_f1": 0.3299,
+        "mae": 2.875,
+        "n_features": 10
+      },
+      "9": {
+        "score": 0.3651,
+        "binary_f1": 0.6316,
+        "ternary_f1": 0.356,
+        "mae": 2.8864,
+        "n_features": 10
+      },
+      "10": {
+        "score": 0.3817,
+        "binary_f1": 0.6154,
+        "ternary_f1": 0.3564,
+        "mae": 2.5795,
+        "n_features": 10
+      },
+      "11": {
+        "score": 0.3553,
+        "binary_f1": 0.5934,
+        "ternary_f1": 0.3382,
+        "mae": 2.8295,
+        "n_features": 10
+      }
+    },
+    "incremental_addition": {
+      "3dim_plus_dims_3": {
+        "added_dimensions": [
+          3
+        ],
+        "n_features": 51,
+        "score": 0.3701,
+        "delta_from_3dim": -0.0264
+      },
+      "3dim_plus_dims_4": {
+        "added_dimensions": [
+          3,
+          4
+        ],
+        "n_features": 61,
+        "score": 0.3804,
+        "delta_from_3dim": -0.016
+      },
+      "3dim_plus_dims_5": {
+        "added_dimensions": [
+          3,
+          4,
+          5
+        ],
+        "n_features": 71,
+        "score": 0.3523,
+        "delta_from_3dim": -0.0442
+      },
+      "3dim_plus_dims_6": {
+        "added_dimensions": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "n_features": 81,
+        "score": 0.3208,
+        "delta_from_3dim": -0.0756
+      },
+      "3dim_plus_dims_7": {
+        "added_dimensions": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "n_features": 91,
+        "score": 0.3075,
+        "delta_from_3dim": -0.089
+      },
+      "3dim_plus_dims_8": {
+        "added_dimensions": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "n_features": 101,
+        "score": 0.2756,
+        "delta_from_3dim": -0.1209
+      },
+      "3dim_plus_dims_9": {
+        "added_dimensions": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "n_features": 111,
+        "score": 0.3351,
+        "delta_from_3dim": -0.0614
+      },
+      "3dim_plus_dims_10": {
+        "added_dimensions": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "n_features": 121,
+        "score": 0.3518,
+        "delta_from_3dim": -0.0447
+      },
+      "3dim_plus_dims_11": {
+        "added_dimensions": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "n_features": 131,
+        "score": 0.3082,
+        "delta_from_3dim": -0.0882
+      }
+    },
+    "conclusion_3dim_vs_full": {
+      "3dim_score": 0.3965,
+      "12dim_score": 0.3082,
+      "delta": -0.0882
+    }
+  }
+}

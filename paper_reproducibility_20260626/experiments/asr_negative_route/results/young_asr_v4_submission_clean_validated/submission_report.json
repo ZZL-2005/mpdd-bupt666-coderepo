@@ -1,0 +1,31 @@
+{
+  "asr_features": "obs\\experiments\\young_asr_phq9_evidence_test_clean\\young_asr_phq9_evidence_features.csv",
+  "asr_audit": "obs\\experiments\\young_asr_phq9_evidence_test_clean\\young_asr_phq9_evidence_audit.jsonl",
+  "output_dir": "official_baseline\\make_submission_forcodabench\\young_asr_v4_submission_clean",
+  "validated_submission_zip": "official_baseline\\make_submission_forcodabench\\young_asr_v4_submission_clean_validated\\submission.zip",
+  "n_ids": 22,
+  "phq_summary": {
+    "min": 0.0,
+    "mean": 4.5,
+    "max": 12.0
+  },
+  "region_counts": {
+    "conflict_positive_negative": 9,
+    "direct_symptom": 4,
+    "low_content": 1,
+    "overload_depletion": 4,
+    "protected_conflict": 1,
+    "rumination_minor_events": 1,
+    "trait_amplified_overload": 1,
+    "weak_semantic": 1
+  },
+  "binary_counts": {
+    "0": 13,
+    "1": 9
+  },
+  "ternary_counts": {
+    "0": 13,
+    "1": 7,
+    "2": 2
+  }
+}

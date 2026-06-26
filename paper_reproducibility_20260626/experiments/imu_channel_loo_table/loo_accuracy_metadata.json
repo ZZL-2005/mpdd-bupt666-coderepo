@@ -1,0 +1,22 @@
+{
+  "data_root": "E:\\mpdd2026",
+  "out_dir": "C:\\Users\\ZZL\\Desktop\\report\\moreexp\\imu_channel_seed_stability",
+  "channel_counts": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "models": [
+    "linear",
+    "ridge"
+  ],
+  "cv": "LeaveOneOut",
+  "ridge_alpha": 1.0,
+  "fs": 50,
+  "train_n": 88,
+  "uses_bigfive": false,
+  "label2_threshold": "predicted phq9 >= 5",
+  "label3_thresholds": "0: phq9 < 5; 1: 5 <= phq9 < 10; 2: phq9 >= 10",
+  "challenge_like_score": "(label2_f1 + ccc_clipped + label3_quadratic_kappa) / 3"
+}

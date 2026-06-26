@@ -1,0 +1,22 @@
+\begin{table}[!t]
+\centering
+\caption{Historical public-leaderboard trajectory of the final system family.
+The rows are preserved cumulative development checkpoints, not strict
+leave-one-component-out ablations.}
+\label{tab:stepwise_components}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{p{0.35\columnwidth}rrrr}
+\toprule
+\textbf{Checkpoint} & \textbf{Score} & \textbf{F1} & \textbf{CCC} & \textbf{Kappa} \\
+\midrule
+\textsc{Orig} backbone       & 0.6701 & 0.7972 & 0.5083 & 0.7048 \\
++ OpenFace AU/gaze           & 0.7063 & 0.7972 & 0.6170 & 0.7048 \\
++ Frame-change / multi-view  & 0.7178 & 0.7972 & 0.6515 & 0.7048 \\
++ Batch moment alignment     & 0.7931 & 0.7972 & 0.8772 & 0.7048 \\
++ AND classification rule    & 0.8347 & 0.8361 & 0.8772 & 0.8012 \\
++ Final thresholding         & \textbf{0.8745} & -- & 0.8772 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

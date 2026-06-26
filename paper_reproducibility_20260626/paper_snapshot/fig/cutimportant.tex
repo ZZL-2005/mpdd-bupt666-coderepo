@@ -1,0 +1,34 @@
+\begin{table}[!t]
+\centering
+\caption{Local evidence for compact feature design. Panel A isolates IMU
+channel pruning with Young-train LOO Ridge regression; Panel B summarizes
+OpenFace dimensionality reduction and semantic feature selection with local
+binary classification. These numbers are design evidence, not official
+CodaBench scores.}
+\label{tab:feature_cutting_binary}
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{lccc}
+\toprule
+\multicolumn{4}{l}{\textbf{A. IMU channel pruning (LOO Ridge, MAE $\downarrow$)}} \\
+\midrule
+\textbf{Input channels} & \textbf{Dim} & \textbf{MAE} & \textbf{vs. 3-axis} \\
+\midrule
+3 accel. channels & 36  & \textbf{3.444} & -- \\
+6 channels        & 78  & 5.563          & +2.119 \\
+9 channels        & 129 & 4.945          & +1.501 \\
+12 channels       & 189 & 4.765          & +1.321 \\
+\midrule
+\multicolumn{4}{l}{\textbf{B. OpenFace cutting (local LR, binary accuracy $\uparrow$)}} \\
+\midrule
+\textbf{Comparison} & \textbf{Setting} & \textbf{Dim} & \textbf{Acc.} \\
+\midrule
+PCA compression & Raw descriptor    & 710 & 0.500 \\
+PCA compression & PCA5              & 5   & \textbf{0.682} \\
+Semantic subset & All semantic stats & 479 & 0.682 \\
+Semantic subset & AU+gaze stats      & 399 & \textbf{0.727} \\
+
+\bottomrule
+\end{tabular}
+\end{table}

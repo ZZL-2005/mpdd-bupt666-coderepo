@@ -1,0 +1,5 @@
+criterion,subset,metric_value
+best_direct_ridge_binacc,AU_plus_Gaze,0.7272727272727273
+best_logistic_binacc,AU_intensity_stats,0.5909090909090909
+best_residual_binacc,Gaze_only,0.8181818181818182
+best_residual_ternary_f1,AU_all_stats,0.65
