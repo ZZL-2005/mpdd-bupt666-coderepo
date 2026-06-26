@@ -40,7 +40,7 @@ paper_reproducibility_20260626/
 | Table 1B OpenFace raw/PCA and semantic subset cutting | `experiments/openface_pca_and_cutting/1_PCA_dimension_scan/dim_reduction_analysis.py`; `3_openface_semantic_subset/openface_pruned_analysis.py` | `dim_reduction_analysis.json`; `openface_pruned_results.json` | Script and result JSON preserved |
 | Table 2 final model progression | final pipeline scripts plus `stage_records/FINAL_MODEL_STAGE_RESULTS_CN.md` | `paper_snapshot/fig/finalmodel.tex`; `stage_records/EXPERIMENT_EVIDENCE_AUDIT_CN.md` | Historical public-leaderboard trajectory, not strict add-one ablation |
 | ASR/audio/deep-sequence non-final exploration | `experiments/asr_negative_route/scripts/*.py` | `experiments/asr_negative_route/RESULTS.md`; `results/young_asr_v4_submission_clean_validated/submission.zip` | Negative/non-final route preserved; ASR transcripts are not redistributed here |
-| Current paper source and tables | `paper_snapshot/sigconf.tex`; `paper_snapshot/fig/*.tex` | same | Snapshot for traceability |
+| Current paper source, references, and figures | `paper_snapshot/sigconf.tex`; `paper_snapshot/references.bib`; `paper_snapshot/fig/*` | `paper_snapshot/sigconf.pdf`; exported Figure 1 PDF/PNG | Snapshot for traceability |
 
 ## Fast Reproduction of the Final Submission
 
@@ -81,4 +81,3 @@ That mode requires the local MPDD Young data directory.
   files because they may contain derived participant text.
 - All full from-scratch runs require the official MPDD data, which is not
   redistributed in this package.
-
